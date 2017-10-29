@@ -1,0 +1,29 @@
+Source: libimengines
+Section: libs
+Priority: extra
+Maintainer: Jonathan Wilson <jfwfreo@tpgi.com.au>
+Build-Depends: debhelper (>= 5), cdbs, libglib2.0-dev
+
+Package: libimengines4
+Section: libs
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: IM Engines Library
+ Library for IM Engines.
+
+Package: libimengines4-dev
+Section: devel
+Priority: extra
+Architecture: all
+Depends: libimengines4, pkg-config
+Description: IM Engines Library dev package.
+ Library for IM Engines dev package.
+
+Package: libimengines4-dbg
+Section: devel
+Priority: extra
+Architecture: any
+Depends: libimengines4 (= ${binary:Version}), pkg-config
+Description: IM Engines Library Debug symbols
+ Debug symbols for IM Engines Library.
