@@ -1,2 +1,2 @@
-debian/tmp/usr/lib/libimengines-wp.so.4 usr/lib/
-debian/tmp/usr/lib/libimengines-wp.so.4.2.0 usr/lib/
+debian/tmp/usr/lib/libimengines.so.4 usr/lib/
+debian/tmp/usr/lib/libimengines.so.4.2.0 usr/lib/
