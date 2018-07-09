@@ -21,6 +21,8 @@ endif
 build:
 	CFLAGS="$(CFLAGS)" $(MAKE)
 
+build-arch: build
+
 install: build
 	dh_testdir
 	dh_testroot
