@@ -1,3 +1,9 @@
+libimengines (4.2.4) unstable; urgency=low
+
+  * Initial Maemo Leste import
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Mon, 9 Jul 2018 23:36:00 +0200
+
 libimengines (4.2.3) unstable; urgency=low
 
   * Fix packaging
