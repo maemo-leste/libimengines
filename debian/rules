@@ -21,8 +21,6 @@ endif
 build:
 	CFLAGS="$(CFLAGS)" $(MAKE)
 
-build-arch: build
-
 install: build
 	dh_testdir
 	dh_testroot
@@ -36,7 +34,9 @@ clean:
 	dh_testdir
 	dh_clean
 
-binary: build install
+binary-indep: build install
+
+binary-arch: build install
 	dh_testdir
 	dh_testroot
 	dh_install
@@ -53,4 +53,7 @@ binary: build install
 	dh_md5sums
 	dh_builddeb
 
-.PHONY: build clean binary install
+binary: binary-indep binary-arch
+build-arch: build
+
+.PHONY: build clean install binary-indep binary-arch binary
