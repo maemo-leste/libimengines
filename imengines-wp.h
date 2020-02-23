@@ -63,5 +63,5 @@ imengines_im_status imengines_wp_detach_dictionary(unsigned int dictionary);
 imengines_im_status imengines_wp_attach_dictionary(unsigned int dictionary, gboolean use_dictionary);
 imengines_im_status imengines_wp_set_data(const char *d, const char *v);
 imengines_im_status imengines_wp_set_prediction_language(const char *language, unsigned int language_index);
-void imengines_wp_destroy();
+void imengines_wp_destroy(void);
 imengines_im_status imengines_wp_init(const char *wpengine);
