@@ -43,7 +43,7 @@ typedef struct _imengines_wp_plugin {
   imengines_im_status (*get_candidates)(const gchar *previous_word, const gchar *current_word, imengines_wp_candidates *candidates);
   imengines_im_status (*set_max_candidates)(int max_candidates);
   imengines_im_status (*get_max_candidates)(int *number);
-  gboolean (*word_exists)(const char *word, unsigned int dictionary, gboolean *exists);
+  gboolean (*word_exists)(const char *word, unsigned int dictionary, unsigned int *language_index);
   imengines_im_status (*hit_word)(const char *word, unsigned int dictionary, unsigned int language_index);
   imengines_im_status (*delete_word)(const char *word, unsigned int dictionary, unsigned int language_index);
   imengines_im_status (*add_word)(const char *word, unsigned int dictionary, unsigned int language_index);
@@ -55,7 +55,7 @@ imengines_im_status imengines_wp_save_dictionary(unsigned int dictionary);
 imengines_im_status imengines_wp_add_word(const char *word, unsigned int dictionary, unsigned int language_index);
 imengines_im_status imengines_wp_delete_word(const char *word, unsigned int dictionary, unsigned int language_index);
 imengines_im_status imengines_wp_hit_word(const char *word, unsigned int dictionary, unsigned int language_index);
-gboolean imengines_wp_word_exists(const char *word, unsigned int dictionary, gboolean *exists);
+gboolean imengines_wp_word_exists(const char *word, unsigned int dictionary, unsigned int *language_index);
 imengines_im_status imengines_wp_get_max_candidates(int *number);
 imengines_im_status imengines_wp_set_max_candidates(int max_candidates);
 imengines_im_status imengines_wp_get_candidates(const gchar *previous_word, const gchar *current_word, imengines_wp_candidates *candidates);

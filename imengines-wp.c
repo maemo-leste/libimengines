@@ -55,11 +55,11 @@ imengines_im_status imengines_wp_hit_word(const char *word, unsigned int diction
   g_return_val_if_fail(wp->hit_word != NULL,IM_STATUS_FAILED);
   return wp->hit_word(word, dictionary, language_index);
 }
-gboolean imengines_wp_word_exists(const char *word, unsigned int dictionary, gboolean *exists)
+gboolean imengines_wp_word_exists(const char *word, unsigned int dictionary, unsigned int *language_index)
 {
   g_return_val_if_fail(wp != NULL,FALSE);
   g_return_val_if_fail(wp->word_exists != NULL,FALSE);
-  return wp->word_exists(word, dictionary, exists);
+  return wp->word_exists(word, dictionary, language_index);
 }
 imengines_im_status imengines_wp_get_max_candidates(int *number)
 {
