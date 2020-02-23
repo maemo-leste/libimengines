@@ -1,3 +1,9 @@
+libimengines (4.2.5) unstable; urgency=low
+
+  * Fix imengines_wp_word_exists signature
+
+ -- Ivaylo Dimitrov <ivo.g.dimitrov.75@gmail.com>  Sun, 23 Feb 2020 18:32:13 +0200
+
 libimengines (4.2.4) unstable; urgency=low
 
   * Initial Maemo Leste import
