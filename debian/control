@@ -21,14 +21,6 @@ Depends: libimengines-wp4 (= ${binary:Version}), pkg-config
 Description: IM Engines WP Library dev package.
  Word prediction engine abstraction library development files
 
-Package: libimengines-wp4-dbg
-Section: devel
-Priority: extra
-Architecture: any
-Depends: libimengines4-wp4 (= ${binary:Version})
-Description: IM Engines WP Library dev package.
- Debug symbols for IM Engines WP Library.
-
 Package: libimengines4
 Section: libs
 Priority: extra
@@ -45,11 +37,3 @@ Architecture: all
 Depends: libimengines4 (= ${binary:Version}), pkg-config
 Description: IM Engines Library dev package.
  Main im-engines library development files
-
-Package: libimengines4-dbg
-Section: devel
-Priority: extra
-Architecture: any
-Depends: libimengines4 (= ${binary:Version})
-Description: IM Engines Library
- Debug symbols for IM Engines Library.
